@@ -1,0 +1,73 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Contact",
+    "description": "A contact object from Address book",
+    "type": "object",
+    "properties": {
+        "AddressBook":{
+            "type":"object",
+            "properties": {
+        "Contact": {
+            "type":"array",
+            "items": {
+                "type": "object",
+                "properties" : {
+                    "CompanyName": {
+                        "type": "string"
+                    },
+                    "Email": {
+                        "type": "string"
+                    },
+                    "Address": {
+                        "type": "string"
+                    },
+                    "Phone": {
+                        "type": "string"
+                    },
+                    "PostalCode": {
+                        "type": ["string", "integer"]
+                    },
+                    "Country":{
+                        "type":"string"
+                    },
+                    "CustomerID": {
+                        "type": "string"
+                    },
+                    "City":{
+                        "type": "string"
+                    },
+                    "Fax":{
+                        "type": "string"
+                    },
+                    "ContactName": {
+                        "type": "string"
+                    }, 
+                    "ContactTitle":{
+                        "type":"string"
+                }
+            },
+            "required": [
+                "CompanyName",
+                "Email",
+                "Address",
+                "Phone", 
+                "PostalCode", 
+                "Country",  
+                "CustomerID", 
+                "City", 
+                "Fax", 
+                "ContactName", 
+                "ContactTitle" 
+            ]
+         }
+        }
+    },
+    "required": [
+        "Contact"
+    ]
+    }
+},
+    "required": [
+        "AddressBook"
+    ]
+}

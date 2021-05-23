@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="AddressBook">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Contact" maxOccurs="unbounded" >
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="CustomerID" type="xs:string" minOccurs="1"/>
+		            <xs:element name="CompanyName" type="xs:string" minOccurs="1" />
+                    <xs:element name="ContactName" type="xs:string" minOccurs="1" />
+                    <xs:element name="ContactTitle" type="xs:string" minOccurs="1" />
+                    <xs:element name="Address" type="xs:string" minOccurs="1"/>
+                    <xs:element name="City" type="xs:string" minOccurs="1" />
+                    <xs:element name="Email" type="xs:string" minOccurs="1"/>
+                    <xs:element name="Region" type="xs:string" minOccurs="0"/>
+                    <xs:element name="PostalCode" type="xs:string" minOccurs="1" />
+                    <xs:element name="Country" type="xs:string" minOccurs="1"/>
+                    <xs:element name="Phone" type="xs:string" minOccurs="1" />
+                    <xs:element name="Fax" type="xs:string" minOccurs="1"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
