@@ -67,6 +67,9 @@
 		If successful, output.json is created in root of project.
 
 	To validate json/xml file against scheme: pass file then --schema. [file].[json | xml] --schema.
+4. To run program: 
+	
+	Click Run (located in the top toolbar) and then click Run without Debugging or in Windows press ctrl + F5 in Vscode.
 
 Important note: 
   
