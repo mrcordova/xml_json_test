@@ -23,12 +23,14 @@
 Important note: 
   json schema located at "/src/main/java/com/test/schema.json"
 
-	json schema makes every member required and postal codes can be either string or numbers. I was not sure if I needed to restrict it
+	json schema makes every member required and postal codes can be either string or numbers. 
+	I was not sure if I needed to restrict it
 	to numbers only or not since other countries have a mixture of letters and numbers.
 	
   xml schema located at ""./src/main/java/com/test/schema.xsd"
 
-	xml schema created with the structure of "/src/main/java/com/test/ab.xml" in mind. Was not sure which members of the contact object 
+	xml schema created with the structure of "/src/main/java/com/test/ab.xml" in mind. 
+	Was not sure which members of the contact object 
         were optional so I made everything but "region" required.
 	
 	
