@@ -1,6 +1,6 @@
 # xml_json_test
 
-1. Project created in VScode and built with Marven.
+1. Project created in VScode with Java Extension Pack (located in vscode) installed, and built with Marven.
 
 2. Dependicies (located in pom.xml): 
 	
@@ -10,7 +10,53 @@
 
 3. Aguments to pass and how:
 	
-	Arguments are located in .vscode (which is generated when the program is built) -> launch.json
+	Arguments are located in .vscode (which is generated when the program is built) -> launch.json 
+	
+	(add "args" : [] in configurations array).
+	
+	Example launch.json (for reference):
+		
+		{
+    
+    			"version": "0.2.0",
+
+    			"configurations": [
+    
+        			{
+            				"type": "java",
+
+            				"name": "Launch Current File",
+
+            				"request": "launch",
+
+            				"mainClass": "${file}",
+
+            				"args": [
+
+                				//[file] --[xml | json | schema]
+
+                 				"src/main/java/com/test/ab.xml",
+
+                 				"--schema"
+             				] 
+            
+        			},
+
+        			{
+            				"type": "java",
+
+            				"name": "Launch App",
+
+            				"request": "launch",
+
+            				"mainClass": "com.test.App",
+
+            				"projectName": "XML_JSON_TEST"
+
+             
+        			}
+    			]
+		}
 
 	To convert a json file to xml file: pass json file then --xml command. [file].json --xml
 
@@ -23,6 +69,7 @@
 	To validate json/xml file against scheme: pass file then --schema. [file].[json | xml] --schema.
 
 Important note: 
+  
   json schema located at "/src/main/java/com/test/schema.json"
 
 	json schema makes every member required and postal codes can be either string or numbers. 

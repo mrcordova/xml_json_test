@@ -97,7 +97,7 @@ public final class App {
             } else if (fileType.equals("xml")) {
                 String xmlPath = args[0];
                 String xsdPath = "./src/main/java/com/test/schema.xsd";
-                System.out.println(xsdPath);
+               
                 System.out.println(fileName + " validates against schema.xsd? "+ validateXMLSchema(xsdPath, xmlPath ));     
             }
            
